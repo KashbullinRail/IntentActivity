@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvWhy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Здесь будет вопрос"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,8 +23,28 @@
         android:layout_marginTop="32dp"
         android:onClick="onClickGoAct_2"
         android:text="Activity 2"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/tvWhy"
+        app:layout_constraintStart_toStartOf="@+id/tvWhy"
+        app:layout_constraintTop_toBottomOf="@+id/tvWhy" />
+
+    <TextView
+        android:id="@+id/tvGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tvWhy"
+        app:layout_constraintEnd_toEndOf="@+id/tvWhy"
+        app:layout_constraintStart_toStartOf="@+id/tvWhy" />
+
+    <EditText
+        android:id="@+id/etAABB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="165dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
