@@ -15,6 +15,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bindingS = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingS.root)
+
+//        val list = listOf(0, 345, 323, 355)
+//        val list2 = list.sum()
+//        Log.d("TAG123", "LIST = ${list2.toString()}")
+//        val list3 = list.sorted()
+//        Log.d("TAG123", "LIST = ${list3.toString()}")
+//        val list4 = list.reversed()
+//        Log.d("TAG123", "LIST = ${list4.toString()}")
+//        val list5 = list.size
+//        Log.d("TAG123", "LIST = ${list5.toString()}")
+
+//        for (index in list) Log.d("TAG123", "LIST = $index")
+//        for ((index, item) in list.withIndex()) Log.d("TAG123", "LIST = $index = $item")
+//        for (index in 10 downTo 3) {
+//            var list11 = arrayListOf<Int>(11)
+//            list11.add(index, index)
+//            Log.d("TAG1234", "for ${list11.toString()}")
+//        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
