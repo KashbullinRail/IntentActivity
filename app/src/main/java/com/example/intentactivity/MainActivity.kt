@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         if(requestCode == REQUEST_CODE && resultCode == RESULT_OK && data != null){
             Log.d("TAG", "result")
             bindingS.tvWhy.text = data.getStringExtra(KEY2)
-
         }
     }
 
@@ -32,6 +31,5 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra(KEY, "что мне передать?")
         startActivityForResult(intent, REQUEST_CODE)
     }
-
 
 }
